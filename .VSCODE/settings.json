@@ -13,5 +13,16 @@
   "[django-html]": {
     "editor.defaultFormatter": "batisteo.vscode-django"
   },
-  "sqltools.connections": []
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "askForPassword": true,
+      "driver": "PostgreSQL",
+      "name": "restaurant_db",
+      "database": "Food_Restaurant",
+      "username": "postgres"
+    }
+  ]
 }
