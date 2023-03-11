@@ -7,5 +7,4 @@ class UserAccountConfig(AppConfig):
 
     # Connecting & working with signals
     def ready(self):
-        # Implicitly connect signal handlers decorated with @receiver.
-        from . import user_signals
+        import User_Account.user_signals

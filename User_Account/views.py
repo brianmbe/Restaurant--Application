@@ -5,15 +5,15 @@ from .forms import UserForm
 
 
 def registerUser(request):
-    if request.method == 'POST':
-        print(request.POST)
+
+    if request.method == "POST":
         forms = UserForm(request.POST)
         if forms.is_valid():
             forms.save()
-            return redirect('registeruser')
+            return redirect('home.html')
     else:
         forms = UserForm()
 
     return render(request, 'userAccount/register_user.html', {
-        "forms": forms
+        'forms': forms
     })
